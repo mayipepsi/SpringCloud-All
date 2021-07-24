@@ -1,0 +1,10 @@
+server:
+  port: 8081
+eureka:
+  client:
+    service-url:
+      defaultZone: http://kejun1.com:81/eureka/,http://kejun2.com:82/eureka/
+
+spring:
+  application:
+    name: Eureka-Consumer

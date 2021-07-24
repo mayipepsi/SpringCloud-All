@@ -1,0 +1,14 @@
+
+
+server:
+  port: 82
+
+eureka:
+  instance:
+    hostname: kejun2.com
+
+  client:
+    #fetch-registry: true
+    #register-with-eureka: true
+    service-url:
+      defaultZone: http://kejun1.com:81/eureka/
