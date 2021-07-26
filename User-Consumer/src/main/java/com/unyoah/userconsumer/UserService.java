@@ -3,7 +3,7 @@ package com.unyoah.userconsumer;
 import com.unyoah.userapi.RegisterApi;
 import org.springframework.cloud.openfeign.FeignClient;
 
-@FeignClient("User-Provider")
+@FeignClient(value = "User-Provider", configuration = FeignAuthConfiguration.class)
 public interface UserService extends RegisterApi {
 
 }

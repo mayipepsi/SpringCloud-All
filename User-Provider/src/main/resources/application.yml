@@ -8,3 +8,7 @@ server:
 spring:
   application:
     name: User-Provider
+  security:
+    user:
+      name: root
+      password: root
