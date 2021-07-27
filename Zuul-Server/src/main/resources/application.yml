@@ -1,0 +1,18 @@
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://kejun1.com:81/eureka/,http://kejun2.com:82/eureka/
+
+server:
+  port: 85
+
+spring:
+  application:
+    name: Zull-Server
+
+zuul:
+  routes:
+    api-user-url:
+      path: /**
+      url: http://localhost:83/
+

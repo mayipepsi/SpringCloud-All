@@ -2,8 +2,10 @@ package com.unyoah.userconsumer;
 
 import feign.auth.BasicAuthRequestInterceptor;
 import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
 
+/**
+ * feign 授权配置
+ */
 public class FeignAuthConfiguration {
 
     @Bean

@@ -8,3 +8,25 @@ server:
 spring:
   application:
     name: User-Consumer
+
+feign:
+  client:
+    config:
+      service-valuation:
+        request-interceptors:
+        - com.unyoah.userconsumer.MyBasicAuthRequestInterceptor
+  hystrix:
+    enabled: true
+
+logging:
+  level:
+    com:
+      unyoah:
+        userconsumer: debug
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: SEMAPHORE

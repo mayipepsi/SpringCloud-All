@@ -10,6 +10,7 @@
         <module>User-Api</module>
         <module>User-Provider</module>
         <module>User-Consumer</module>
+        <module>Zuul-Server</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
