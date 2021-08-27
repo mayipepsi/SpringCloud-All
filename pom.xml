@@ -11,6 +11,9 @@
         <module>User-Provider</module>
         <module>User-Consumer</module>
         <module>Zuul-Server</module>
+        <module>Nacos-Consumer</module>
+        <module>Nacos-Provider</module>
+        <module>Nacos-Config</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -46,6 +49,8 @@
             <scope>test</scope>
         </dependency>
 
+
+
     </dependencies>
     <dependencyManagement>
         <dependencies>
@@ -53,6 +58,14 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2.2.1.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

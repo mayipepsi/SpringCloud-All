@@ -1,0 +1,10 @@
+server:
+  port: 98
+
+spring:
+  application:
+    name: Nacos-Provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://192.168.1.176:8848

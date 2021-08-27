@@ -1,0 +1,9 @@
+server:
+  port: 99
+spring:
+  application:
+    name: Nacos-Consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://192.168.1.176:8848
